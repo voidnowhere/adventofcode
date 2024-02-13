@@ -26,9 +26,7 @@ public class Part2 {
                 for (Map.Entry<String, String> e : digits.entrySet()) {
                     line = line.replaceAll(e.getKey(), e.getValue());
                 }
-                for (Map.Entry<String, String> e : digits.entrySet()) {
-                    line = line.replaceAll("[a-z]", "");
-                }
+                line = line.replaceAll("[a-z]", "");
 
                 for (char c : line.toCharArray()) {
                     stringBuilder.append(c);
